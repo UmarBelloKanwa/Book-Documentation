@@ -1,0 +1,25 @@
+{
+  "search-for": "ابحث عن...",
+  "table-of-contents": "جدول المحتويات",
+  "multimedia": "الوسائط المتعددة",
+  "about-the-author": "عن المؤلف",
+  "hadith": "الحديث",
+  "contact-&-support": "الاتصال والدعم",
+  "useful-links": "روابط مفيدة",
+  "start-reading": "ابدأ القراءة",
+  "bismillah": "بسم الله الرحمن الرحيم",
+  "salati": "اللهم صلِ على سيدنا محمد وعلى آله وصحبه أجمعين",
+  "introduction": "مقدمة",
+  "about-the-book": "عن الكتاب",
+  "main-content": "المحتوى الرئيسي",
+  "interpretation": "الترجمة",
+  "explanation": "شرح",
+  "video": "فيديو",
+  "audio": "صوت",
+  "chapter-not-found": "الفصل غير موجود",
+  "languages": [
+      { "name": "العربية", "code": "ar" },
+      { "name": "English", "code": "en" }
+  ],
+  "lang": "اللغات :"
+}

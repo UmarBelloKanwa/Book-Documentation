@@ -1,0 +1,9 @@
+.basmalah {
+    color: var(--txt-color);
+    margin:0;
+}
+.basmalah h1, div h2 {
+   font:var(--font);
+   font-size: 100%;
+   font-weight: 500;
+}

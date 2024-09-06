@@ -1,0 +1,17 @@
+.button {
+  padding: 5px 20px;
+  outline: var(--border);
+  background-color: var(--small-color);
+  width: fit-content;
+  margin: 0.5em auto;
+  box-shadow: var(--big-shadow);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--main-color);
+  font: var(--bold-font);
+  font-size: 20px;
+}
+[dir="rtl"] .button {
+  font-size: 19px;
+}

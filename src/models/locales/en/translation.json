@@ -1,0 +1,25 @@
+{
+    "search-for": "Search for...",
+    "table-of-contents": "Table of Contents",
+    "multimedia": "Multimedia",
+    "about-the-author": "About the Author",
+    "hadith": "Hadith",
+    "contact-&-support": "Contact & Support",
+    "useful-links": "Useful Links",
+    "start-reading": "Start Reading",
+    "bismillah": "In the name of Allah, the most beneficent, the Merciful",
+    "salati": "O God, bless our master Muhammad And peace be upon his family and companions",
+    "introduction": "Introduction",
+    "about-the-book": "About the Book",
+    "main-content": "Main Content",
+    "interpretation": "Interpretation",
+    "explanation": "Explanation",
+    "video": "Video",
+    "audio": "Audio",
+    "chapter-not-found": "Chapter Not Found",
+    "languages": [
+        { "name": "العربية", "code": "ar" },
+        { "name": "English", "code": "en" }
+    ],
+    "lang": "Languages :"
+}

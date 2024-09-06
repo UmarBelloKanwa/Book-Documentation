@@ -1,0 +1,258 @@
+/* Assuming styles.header, styles.title, styles.contents, and styles.icons are defined */
+.header > nav {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 30%;
+  place-items: initial;
+  align-self: center;
+  align-content: center;
+  border-bottom: var(--border);
+  border-radius: 0 0 1em 1em;
+  padding: 0.3em 10px;
+  text-align: center;
+  background-color: var(--container-color);
+  z-index: 100;
+}
+.header * {
+  box-sizing: border-box;
+}
+.header svg {
+  color: var(--main-color);
+}
+/* boxes for 3 div of header */
+.header > nav div {
+  padding: 0.1em 5px;
+  text-align: center;
+  margin: 0;
+  color: var(--txt-color);
+  font-weight: 400;
+}
+
+.header > nav div:not(.contents) {
+  height: 50px;
+}
+
+.title {
+  justify-self: start;
+  padding: 0;
+  perspective: 1000px;
+  padding: 0;
+}
+
+.title img {
+  margin-inline-start: 0;
+  border-radius: 8px;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid var(--light);
+  transform-style: preserve-3d;
+  transition: transform 0.3s;
+  background: linear-gradient(
+    155deg,
+    rgba(30, 58, 138, 0.8),
+    rgba(109, 40, 217, 0.8)
+  );
+
+  &:hover {
+    transform: rotateX(15deg);
+  }
+}
+
+.header > nav svg {
+  vertical-align: middle;
+  width: fit-content;
+  height: 35px;
+  margin: 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.icons {
+  display: inline-flex;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  width: 100%;
+  background-color: var(--small-color);
+  border-radius: 0.7em;
+  border: var(--border);
+}
+
+.icons svg {
+  background-color: #f8f4ff;
+  width: 100% !important;
+  outline: var(--border);
+  padding: 0.2em;
+  border-radius: 3em;
+  margin: 0;
+}
+.icons .dark {
+  background: #0d0340;
+  color: var(--light);
+}
+.contents {
+  display: grid;
+  padding: 0;
+  grid-template-columns: repeat(2, 1fr); /* Auto fit to three equal columns */
+  grid-gap: 5px;
+  grid-row-start: 2;
+  grid-column: 1 / span 2;
+  max-width: 100%;
+}
+
+.contents .searchBar {
+  grid-row-start: 1;
+  grid-column: 1 / span 2;
+  width:100%;
+  padding: 0;
+  height: 30px;
+  max-height: 100%;
+  display: flex;
+  transform: scale(1.1);
+}
+/*boxes for 3 div of .contents */
+.contents span {
+  background-color: var(--small-color);
+  border: var(--border);
+  border-radius: 0.5em;
+  text-align: center;
+  color: var(--txt-color);
+  box-sizing: border-box;
+  direction: inherit;
+  max-width: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* Language Selector */
+.selectLangs {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+  background-color: var(--main-color);
+  color: white;
+  padding: 0 1em;
+  border-radius: 1em;
+  text-align: left;
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+  transform: perspective(800px) rotateY(25deg) scale(0.9) rotateX(10deg);
+  transition: 0.6s ease all;
+}
+.selectLangs:hover {
+  transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg)
+    scale(1);
+  padding: 0;
+}
+.selectLangs ul {
+  list-style-type: lower-roman;
+  margin: 0 2em;
+  padding: 1em;
+  text-align: center;
+}
+
+.selectLangs svg {
+  transform: scale(2.1);
+  margin: 1em 0;
+  vertical-align: middle;
+  color: white;
+}
+
+.selectLangs li  {
+  font-weight: 500;
+  font-family: "Noto Sans Arabic";
+  font-size: 20px;
+}
+.selectLangs li:hover {
+  color:var(--txt-color);
+}
+
+.blurWrapper {
+  position: fixed; /* Ensure it covers the entire viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  border-radius: 10px; /* Optional: rounded corners for the effect */
+  z-index: 100; /* Ensure it's below the ChaptersList */
+}
+
+@media screen and (min-width: 700px) {
+  .header > nav {
+    grid-template-columns: 20% auto 10%;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    padding: 0.5em 10px;
+  }
+  .title {
+    width: fit-content;
+    margin: 0;
+    transform: scale(1.2);
+    /* Default origin is center */
+    transform-origin: center center;
+  }
+
+  /* For RTL direction */
+  [dir="rtl"] .title {
+    transform-origin: right center;
+  }
+
+  /* For LTR direction */
+  [dir="ltr"] .title {
+    transform-origin: left center;
+  }
+
+  .title img {
+    border-radius: 8px;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .header > nav div {
+    height: 50px;
+  }
+  .icons svg {
+    width: fit-content !important;
+  }
+  .contents,
+  .icons {
+    justify-items: center;
+    align-items: center;
+    justify-self: end;
+    align-content: center;
+    padding: 0;
+    width: fit-content;
+  }
+  .contents {
+    grid-template-columns: 65% auto auto;
+    grid-row-start: 1;
+    grid-column: 2;
+    width: 100%;
+  }
+
+  .contents .searchBar {
+    grid-row-start: unset;
+    grid-column: unset;
+    transform: scale(0.7);
+  }
+  .contents span{
+    border: none;
+    padding: 0 !important;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 60%;
+  }
+}

@@ -1,0 +1,15 @@
+.container
+{ display: flex;
+  flex-direction: column;
+  background-color:var(--container-color);
+  min-height: 100vh;}
+
+.main {
+    flex: 1;
+    margin-top: 0;
+}
+@media screen and (min-width:700px) {
+    .main {
+        margin-top:4.3em;
+    }
+}

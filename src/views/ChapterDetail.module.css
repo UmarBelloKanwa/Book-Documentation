@@ -1,0 +1,134 @@
+.article {
+  border-radius: 1em;
+  font-size: large;
+  height: 100%;
+  overflow-y: auto;
+  color: var(--txt-color);
+  padding: 1em 0;
+}
+.article > .context {
+  background-color: var(--eye-color);
+  margin-bottom: 1em;
+  border-radius: 2em;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  &:hover ul {
+    display: flex;
+  }
+  &:hover {
+    font-size: 19px;
+  }
+}
+.article .media {
+  margin-top: 1em;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  background-color: rgba(255, 166, 0, 0.1);
+  border-radius: 2em;
+  padding: 0 2em 0.5em;
+  border: var(--border);
+}
+.media .video {
+  height: 320px;
+  width: 85vw;
+  margin: auto;
+  border-radius: 1em;
+}
+.article div h1 {
+  color: var(--txt-color);
+}
+.article div p {
+  margin: 0 auto;
+  text-align: justify;
+  font-weight: 400;
+  color: var(--txt-color);
+}
+
+.heads {
+  width: 100%;
+  border-radius: 20px;
+  border: 5px solid transparent;
+  box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+  background-color: var(--light);
+}
+.heads span {
+  display: block;
+  background-color: #6c53dc;
+  height: fit-content;
+  margin: 2% auto;
+  font-size: 100%;
+  color: white;
+  padding: 0.3em 0;
+  border: var(--border);
+  border-radius: 0.5em;
+  width: 95%;
+  text-align: center;
+}
+.heads > div {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heads svg {
+  width: 100%;
+  max-width: max-content;
+  padding: 5px auto;
+  outline: 5px solid var(--border-color);
+  border-radius: 1em;
+  transform: scale(1.5);
+  margin: 1em;
+  background-color: white;
+  color: var(--main-color);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+@media screen and (min-width: 700px) {
+  .heads {
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    transform: perspective(100em) translate3d(0px, 0px, -250px) rotateX(27deg)
+      scale(0.9, 0.9);
+    transition: 0.4s ease-in-out transform;
+
+    &:hover {
+      transform: translate3d(0px, 0px, -250px);
+    }
+  }
+  .heads > div {
+    margin-top: auto;
+  }
+  .article {
+    height: 90vh;
+    border: var(--border);
+    background-color: var(--bg-color);
+  }
+  .article .context {
+    padding: 0 2em 0.5em;
+  }
+
+  .article div h1 {
+    font-size: x-large;
+  }
+  .media .video {
+    height: 350px;
+    width: 35vw;
+    margin: auto;
+  }
+  .article div {
+    margin: auto 7%;
+    &:hover {
+      font-size: 20px;
+      transform: scale(1);
+      filter: blur(0px);
+    }
+  }
+}

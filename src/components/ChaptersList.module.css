@@ -1,0 +1,200 @@
+/*Chapters List Search popup*/
+.searchChapters {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin: auto 0;
+  z-index: 200;
+  height: 100vh;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--container-color);
+  padding-top: 1.5em;
+}
+.cancel {
+  position: absolute;
+  top: 0em;
+  right:0em;
+  height: 35px;
+  width: 35px;
+}
+.searchBar {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: 15px auto;
+  width: 90%;
+  padding: 0.5em;
+  height: 43px;
+  border-bottom: var(--border);
+}
+
+.searchChapters .listContainer {
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+  padding-bottom: 100px;
+}
+.searchChapters .listContainer div {
+  color: var(--txt-color);
+  width: fit-content;
+  font-weight: 500;
+  margin: 5px 15px;
+  text-align: justify;
+}
+.searchChapters .listContainer div span {
+  text-align: justify;
+  width: fit-content;
+  margin: 0 3px;
+}
+
+@media screen and (min-width: 700px) {
+  .searchChapters {
+    width: 40%;
+    box-shadow: var(--big-shadow);
+    border: var(--border);
+    border-radius: 20px;
+    left: 50%;
+    top: 5px;
+    height: 98vh;
+    transform: translate(-50%, 0);
+    width: 35em;
+    margin: auto 0;
+  }
+  .searchBar {
+    width: 90%;
+    margin: 15px auto;
+  }
+}
+
+/*Chapters list as Menu */
+.chaptersList {
+  height: 100%;
+  width: 100%;
+}
+.chaptersList .listContainer div {
+  margin: 2% auto;
+  font-size: 100%;
+  color: white;
+  padding: 0.2% 0;
+  border: var(--border);
+  border-radius: 0.5em;
+  background-color: var(--main-color);
+  width: 97%;
+  white-space: nowrap;
+  overflow: auto;
+  text-overflow: ellipsis;
+  -ms-overflow-style: none;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  &:hover {
+    color: var(--txt-color);
+  }
+}
+.chaptersList div::-webkit-scrollbar {
+  display: none;
+}
+.chaptersList div span {
+  width: 100%;
+  text-align: center;
+}
+.searchBar {
+  padding: 0;
+}
+.chaptersList .intro {
+  display: block !important;
+  text-align: center !important;
+}
+.chaptersList .listContainer span:first-child {
+  padding: 0 0.5em;
+  width: fit-content;
+}
+
+/*Chapters list page*/
+.chapListPage {
+  width: 100%;
+  margin: auto;
+}
+
+.chapListPage .searchBar {
+  width: 90%;
+  margin: auto;
+  border: none;
+}
+
+.chapListPage .listContainer {
+  padding: 0;
+}
+
+.chapListPage .listContainer div {
+  margin: 5px auto;
+  font-size: 100%;
+  padding: 0.2% 0;
+  color: var(--txt-color);
+  border-radius: 0.5em;
+
+  width: 97%;
+  white-space: nowrap;
+  overflow: auto;
+  text-overflow: ellipsis;
+  -ms-overflow-style: none;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  &:hover {
+    color: var(--txt-color);
+  }
+}
+
+.chapListPage .listContainer span:first-child {
+  padding: 0 0.5em;
+  width: fit-content;
+}
+.chapListPage .intro {
+  padding-inline-start: 50px;
+}
+.chapListPage span {
+  text-align: justify;
+}
+@media screen and (min-width: 700px) {
+  .chapListPage .searchBar {
+    width: 60%;
+  }
+  .chapListPage .listContainer {
+    width: 95%;
+    margin: auto;
+    text-align: justify;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .chapListPage .listContainer div,
+  .chapListPage .intro {
+    color: white;
+    background-color: var(--main-color);
+    height: 150px;
+    display: grid;
+    grid-template-columns: auto;
+    font-size: 25px !important;
+    font-weight: 900;
+    white-space: wrap;
+    transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg);
+    border: var(--border);
+    border-radius: 20px;
+    box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease-in-out transform;
+    &:hover {
+      transform: translate3d(0px, 0px, -250px);
+    }
+  }
+
+  .chapListPage span {
+    text-align: unset;
+  }
+  .chapListPage .intro {
+    padding: 0;
+    align-content: center;
+    display: block !important;
+    text-align: center !important;
+  }
+}
