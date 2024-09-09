@@ -13,6 +13,15 @@ function Footer() {
 
   return (
     <footer className={styles.footer}>
+      <div className={styles.navs}>
+        <span onClick={() => navigate("/chapters")}>
+         {t("start-reading")}
+       </span>
+       <span onClick={() => navigate("/multimedia")}>{t("multimedia")}</span>
+       <span onClick={() => navigate("/chapters-list")}>
+         {t("table-of-contents")}
+       </span>
+      </div>
       <div className={styles.contact}>
         <a
           href="https://web.facebook.com/umarbellokanwa"
@@ -46,15 +55,6 @@ function Footer() {
         >
           <BsTwitterX />
         </a>
-      </div>
-      <div className={styles.navs}>
-        <span onClick={() => navigate("/chapters")}>
-          {t("start-reading")}
-        </span>
-        <span onClick={() => navigate("/multimedia")}>{t("multimedia")}</span>
-        <span onClick={() => navigate("/chapters-list")}>
-          {t("table-of-contents")}
-        </span>
       </div>
       <div className={styles.footerBottom}>
         <span className={styles.copyright} dir="ltr">
