@@ -1,5 +1,6 @@
 import React, { useEffect} from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router } from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
 import Layout from "./views/Layout";
 import Home from "./views/Home";
 import Chapters from "./views/Chapters";
@@ -28,7 +29,7 @@ function App() {
   return (
     <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
       <CssBaseline />
-      <BrowserRouter>
+      <Router>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -39,7 +40,7 @@ function App() {
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </Router>
     </ThemeProvider>
   );
 }
