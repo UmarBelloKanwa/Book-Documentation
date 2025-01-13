@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Arbaeena Hadith Book Site README
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
+The **Hadith Book Site** is a web application that provides users with access to a comprehensive collection of Hadiths. Users can read, share, download, and listen to Hadith chapters in various formats, including text, audio, and video. The site supports **English** and **Arabic** languages, offering a seamless bilingual experience.
 
-## Available Scripts
+## Features
+1. **Multilingual Support**
+   - The site is available in:
+     - **English**
+     - **Arabic**
+2. **Hadith Access**
+   - Users can:
+     - **Read** Hadith chapters in text format.
+     - **Listen** to Hadith chapters in audio format.
+     - **Watch** Hadith chapters in video format.
+3. **Sharing Options**
+   - Users can share Hadiths via supported social media platforms or messaging apps.
+4. **Download Options**
+   - Users can download Hadith chapters in:
+     - **Text** format (PDF/HTML)
+     - **Audio** format (MP3)
+     - **Video** format (MP4)
 
-In the project directory, you can run:
+## Technology Stack
+- **Frontend**: ReactJS (JavaScript)
+- **Audio/Video Processing**: Web APIs for media playback
+- 
+## Prerequisites
+Ensure you have the following installed:
+1. **Node.js 14+** and **npm**
+2. **A modern web browser**
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/UmarBelloKanwa/Book-Documentation
+   cd hadith-book-site
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+4. Open `http://localhost:3000` in your browser to access the iHadith Book Site.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
+- **Read Hadiths**: View Hadith chapters in both English and Arabic.
+- **Listen to Hadiths**: Play audio recordings of Hadith chapters.
+- **Watch Hadiths**: View video explanations of Hadith chapters.
+- **Share Hadiths**: Share chapters via social media or messaging apps.
+- **Download Hadiths**: Download chapters in text, audio, or video format for offline access.
 
-### `npm test`
+## Key Functionalities
+1. Bilingual support for reading and listening to Hadiths.
+2. Media playback using built-in web players.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Future Enhancements
+1. Add support for more languages.
+2. Implement advanced search and filtering features.
+3. 
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
-### `npm run build`
+## Contributors
+- **Umar Bello Kanwa** ([umarbellokawa@gmail.com](mailto:umarbellokawa@gmail.com))
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
+Thank you for using the iHadith Book Site!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
