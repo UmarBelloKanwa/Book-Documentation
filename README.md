@@ -24,7 +24,7 @@ The **Hadith Book Site** is a web application that provides users with access to
      - **Video** format (MP4)
 
 ## Technology Stack
-- **Frontend**: ReactJS (JavaScript)
+- **Frontend**: ReactJS, International-18Next (JavaScript)
 - **Audio/Video Processing**: Web APIs for media playback
 - 
 ## Prerequisites
